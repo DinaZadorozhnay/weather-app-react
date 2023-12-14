@@ -1,0 +1,7 @@
+{
+  "git.openDiffOnClick": false,
+  "emmet.preferences": {},
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
