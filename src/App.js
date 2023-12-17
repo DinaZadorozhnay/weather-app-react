@@ -92,6 +92,16 @@ function App() {
           temperatureMax={Math.round(weather.temperatureMax)}
           temperatureMin={Math.round(weather.temperatureMin)}
         />
+        <div class="git-hub">
+          <a
+            href="https://github.com/DinaZadorozhnay/weather-app-react.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-sourse code{" "}
+          </a>
+          by Dina Zadorozhnay
+        </div>
       </div>
     </div>
   );
