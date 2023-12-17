@@ -1,28 +1,28 @@
 import React from "react";
 
-export default function ForecastTable() {
+export default function ForecastTable(props) {
   return (
     <div className="table">
       <div className="tableWrapper">
-        <div class="col weatherTable">
-          <div class="day">Fri</div>
-          <img src="" class="tableIMG" alt="" width="50px" />
+        <div className="col weatherTable">
+          <div className="day">Fri</div>
+          <img src={props.icon} className="tableIMG" alt="" width="50px" />
 
-          <div class="labels">
-            <span class="label">
-              MIN <span>10</span>
+          <div className="labels">
+            <span className="label">
+              MIN <span>{props.temperatureMin}</span>
             </span>
-            <span class="label">
-              MAX <span>20</span>
+            <span className="label">
+              MAX <span>{props.temperatureMax}</span>
             </span>
           </div>
-          <ul class="weatherDetails">
-            <li class="description">windy</li>
+          <ul className="weatherDetails">
+            <li className="description">{props.description}</li>
             <li>
-              Wind <span class="wind">5</span> m/s
+              Wind <span className="wind">{props.wind}</span> m/s
             </li>
             <li>
-              Humidity <span class="humidity">68</span>%
+              Humidity <span className="humidity">{props.humidity}</span>%
             </li>
           </ul>
         </div>

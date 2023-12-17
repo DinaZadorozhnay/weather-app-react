@@ -1,12 +1,10 @@
 import React from "react";
 
-export default function CurrentWeatherDetails() {
+export default function CurrentWeatherDetails(props) {
   return (
     <div>
       <div className="currentWeather">
-        <span id="currentTemp" className="currentTemp">
-          +11
-        </span>
+        <span className="currentTemp">{props.temperature}</span>
 
         <div className="measures">
           <span className="currentMeasure">°C</span>
@@ -14,21 +12,19 @@ export default function CurrentWeatherDetails() {
       </div>
       <div className="labels">
         <span className="label">
-          MIN <span id="today-min">+10</span>
+          MIN <span id="today-min">{props.temperatureMin}</span>
         </span>
         <span className="label">
-          MAX <span id="today-max">+12</span>
+          MAX <span id="today-max">{props.temperatureMax}</span>
         </span>
       </div>
       <ul className="weatherDetails">
-        <li id="today-description" className="description">
-          Clear Sky
+        <li className="description">{props.description}</li>
+        <li>
+          Wind <span>{props.wind}</span> m/s
         </li>
         <li>
-          Wind <span id="today-wind">6</span> m/s
-        </li>
-        <li>
-          Humidity <span id="today-humidity">48</span>%
+          Humidity <span>{props.humidity}</span>%
         </li>
       </ul>
     </div>

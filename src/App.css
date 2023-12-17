@@ -82,9 +82,11 @@ input::placeholder {
   text-transform: capitalize;
   margin-top: 30px;
 }
-.currentImg {
+.currentIcon {
   position: relative;
-  top: 22px;
+  width: 150px;
+  bottom: 10px;
+  left: 20px;
 }
 .currentWeather {
   font-size: 70px;
